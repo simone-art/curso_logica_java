@@ -16,15 +16,19 @@ public class CalcularImc {
 
         Double calcularImc = valorPeso / (valorAltura *valorAltura);
 
-        System.out.print("Seu IMC está em : " + calcularImc);
+//        System.out.print("Seu IMC está em : " + calcularImc);
 
-//        if (calcularImc <= 18 && calcularImc >= 24.9);
-//        System.out.print("Seu peso está por debaixo do nivel normal");
-//        if (calcularImc >= 25 && calcularImc <= 29.4);
-//        System.out.print("Seu peso está normal");
-//        if (calcularImc >= 30);
-//        System.out.print("Seu peso está muito acima do normal");
-
-
+        //De olho na estrutura do If
+        if (calcularImc <= 18.5)
+        {
+            System.out.print("Seu peso está por debaixo do nivel normal");
+        }
+        else if (calcularImc >= 18.5 && calcularImc <= 29.4) {
+            System.out.print("Seu peso está normal");
+        }
+        else if (calcularImc >= 30) {
+            System.out.print("Seu peso está muito acima do normal");
+        }
+        scanner.close();
     }
 }
