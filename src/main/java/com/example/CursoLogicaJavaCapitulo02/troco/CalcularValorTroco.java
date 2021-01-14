@@ -6,7 +6,7 @@
 //
 //    public static void main (String[] args){
 //
-//        //Funcionalidade que facilita a leitura de um número que o usuário digitar
+//        //Funcionalidade que facilita a leitura de um número que o usuário digitar no console
 //        Scanner scanner = new Scanner(System.in);
 //
 //

@@ -18,6 +18,7 @@ public class CalcularImc {
 
 //        System.out.print("Seu IMC está em : " + calcularImc);
 
+
         //De olho na estrutura do If
         if (calcularImc <= 18.5)
         {
