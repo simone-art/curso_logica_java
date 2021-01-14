@@ -1,5 +1,7 @@
 package com.example.CursoLogicaJavaCapitulo02.numero;
 
+import java.util.Scanner;
+
 public class TiposNumericos {
 
     public static void main(String[] args) {
