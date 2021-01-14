@@ -11,12 +11,12 @@ public class LerNomeSobrenome {
     public static void main (String [] args){
 
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Digite o seu nome: ");
+        System.out.println("Digite o seu nome: ");
         String nome = scanner.nextLine();
-        System.out.print("Digite o seu sobrenome: ");
+        System.out.println("Digite o seu sobrenome: ");
         String sobrenome = scanner.nextLine();
 
-        System.out.print( nome + sobrenome );
+        System.out.println( nome + sobrenome );
         scanner.close();
 
     }
