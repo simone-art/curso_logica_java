@@ -12,7 +12,7 @@ public class CalculadoraSimples {
 
         System.out.print("Escolha a operação a fazer: (1) Soma, (2)Substraçao, (3) Multiplicação e (4) divisão : ");
         Integer escolhaOperacao = scanner.nextInt();
-//        Integer escolhaOperacao = 0;
+
 
         System.out.print("Digite o segundo número: ");
         Double num2 = scanner.nextDouble();
