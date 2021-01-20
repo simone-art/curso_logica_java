@@ -26,6 +26,6 @@ public class ProgramaAposentadoria {
         }else{
             System.out.print(" Você ainda não pode-se aposentar");
         }
-        
+        scanner.close();
     }
 }
