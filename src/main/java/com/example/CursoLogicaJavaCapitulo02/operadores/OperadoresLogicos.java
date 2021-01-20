@@ -28,11 +28,13 @@ public class OperadoresLogicos {
 //            }
 
         Boolean carrinhoMaiorQue100 = true;
-        Boolean periodoDePromocao = true;
-        Boolean jaFezCompraNaLoja = true;
+        Boolean periodoDePromocao = false;
+        Boolean jaFezCompraNaLoja = false;
 
 
-        Boolean aplicarDesconto = carrinhoMaiorQue100 && periodoDePromocao && jaFezCompraNaLoja;
+        //Boolean aplicarDesconto = carrinhoMaiorQue100 && periodoDePromocao && jaFezCompraNaLoja;
+        Boolean aplicarDesconto = periodoDePromocao && (carrinhoMaiorQue100 || jaFezCompraNaLoja);
+
         if(aplicarDesconto){
             System.out.print("Sim! Aplique o desconto");
         } else{
