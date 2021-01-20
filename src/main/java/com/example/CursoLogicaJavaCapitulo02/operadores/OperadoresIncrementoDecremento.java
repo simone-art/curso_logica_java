@@ -7,8 +7,8 @@ public class OperadoresIncrementoDecremento {
         System.out.println("Numero antes: " + numero);
 
         //++numero;
-        numero++;
-        //--numero;
+        //numero++;
+        --numero;
         System.out.println("Numero depois: " + numero);
     }
 }
