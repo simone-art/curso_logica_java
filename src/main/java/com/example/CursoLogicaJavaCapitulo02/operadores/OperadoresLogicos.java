@@ -16,14 +16,27 @@ public class OperadoresLogicos {
         //Operador Lógico 0u ||
         // Se colocar os dois false, printará não tela que não vai aplicar desconto
         //Se colocar um false e outro true, printará na tela que vai aplicar o desconto
-        Boolean carrinhoMaiorQue100 = false;
-        Boolean periodoDePromocao = false;
+//        Boolean carrinhoMaiorQue100 = false;
+//        Boolean periodoDePromocao = false;
+//
+//
+//        Boolean aplicarDesconto = carrinhoMaiorQue100 || periodoDePromocao;
+//        if(aplicarDesconto){
+//            System.out.print("Sim! Aplique o desconto");
+//        } else{
+//            System.out.print("Não aplique o desconto!");
+//            }
 
-        Boolean aplicarDesconto = carrinhoMaiorQue100 || periodoDePromocao;
+        Boolean carrinhoMaiorQue100 = true;
+        Boolean periodoDePromocao = true;
+        Boolean jaFezCompraNaLoja = true;
+
+
+        Boolean aplicarDesconto = carrinhoMaiorQue100 && periodoDePromocao && jaFezCompraNaLoja;
         if(aplicarDesconto){
             System.out.print("Sim! Aplique o desconto");
         } else{
             System.out.print("Não aplique o desconto!");
-            }
+        }
     }
 }
