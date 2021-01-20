@@ -7,6 +7,9 @@ public class ConcatenacaoTextos {
         String meio = "é um exemplo ";
         String fim = "de concatenação de textos. ";
 
-        System.out.print(inicio + meio + fim);
+        System.out.println(inicio + meio + fim);
+
+        //"Esse" é considerado um texto estático.Texto que se usa sem ter uma variável
+        System.out.println("Esse " + meio + "de concatenação de textos. ");
     }
 }
