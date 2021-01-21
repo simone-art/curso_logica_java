@@ -38,7 +38,7 @@ public class PassouConcursoPublico {
             {
                 System.out.println("Você passou no concurso! ");
             }
-
         }
+        scanner.close();
     }
 }
