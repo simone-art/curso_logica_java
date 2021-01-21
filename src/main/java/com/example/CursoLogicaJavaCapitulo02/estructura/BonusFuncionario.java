@@ -30,12 +30,12 @@ public class BonusFuncionario {
 
         Double metaFaturamentoAnual = 1000000.0;
 
-        Double faturamentoReal = 2000000.0;
+        Double faturamentoReal = 200000.0;
         faturamentoReal = faturamentoReal * 100 / metaFaturamentoAnual;
 
         Double mediaSalarialFuncionario = 4000.0;
 
-        if (faturamentoReal >= metaFaturamentoAnual && faturamentoReal >= 95) {
+        if (faturamentoReal >= 100) {
             System.out.println("Você receberá um bonus de 100% equivalente a Rs " + mediaSalarialFuncionario);
 
         } else if (faturamentoReal <= metaFaturamentoAnual && faturamentoReal > 80 && faturamentoReal <= 90) {
