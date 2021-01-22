@@ -20,10 +20,19 @@ public class IteracaoFor {
 //        System.out.println("O total da compra é: " + total);
 
         //Com o uso do break, você para o código
+//        for (int i = 0; i < 10; i++) {
+//            if(i== 5){
+//                System.out.println("Vai parar!");
+//                break;
+//            }
+//            System.out.println("Iteracao" + i);
+//        }
+
+        //Com o continue, o código não printa a iteração 5 e continua no 6
         for (int i = 0; i < 10; i++) {
             if(i== 5){
-                System.out.println("Vai parar!");
-                break;
+                System.out.println("Vai continuar!");
+                continue;
             }
             System.out.println("Iteracao" + i);
         }
