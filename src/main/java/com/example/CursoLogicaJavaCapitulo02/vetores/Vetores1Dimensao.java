@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Vetores1Dimensao {
     public static void main(String[] args) {
+        // Isto é um vetor de uma dimensão
 //        String [] cardapio = new String[]{"Calabresa", "Atum", "Queijo", "Presunto"};
 //
 //        System.out.println("Escolha o sabor: ");
@@ -20,12 +21,21 @@ public class Vetores1Dimensao {
 //        }
 
         //Alterando um item da lista para adicionar outro em seu lugar
-        String[] cardapio = new String[]{"Calabresa", "Atum", "Queijo", "Presunto"};
-        cardapio[3] = "Frango";
+//        String[] cardapio = new String[]{"Calabresa", "Atum", "Queijo", "Presunto"};
+//        cardapio[3] = "Frango";
+//
+//        for (int i = 0; i < cardapio.length; i++) {
+//            System.out.println(cardapio[i]);
+//        }
+
+        String [] cardapio = new String[4];
+        cardapio[0] = "Calabresa";
+        cardapio[1] = "Atum";
+        cardapio[2] = "Queijo";
+        cardapio[3] = "Presunto";
 
         for (int i = 0; i < cardapio.length; i++) {
             System.out.println(cardapio[i]);
-        }
-
+       }
     }
 }
