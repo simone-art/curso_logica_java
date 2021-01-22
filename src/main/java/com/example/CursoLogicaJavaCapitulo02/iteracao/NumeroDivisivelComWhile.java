@@ -18,6 +18,8 @@ public class NumeroDivisivelComWhile {
         while(i < numeros.length){
             Integer numero = numeros[i];
             if( numero % 3 == 0){
+                //Se vocé printa o (i) ele vai printar a posição e não o número
+                //System.out.println( i + " é um número divisível por 3");
                 System.out.println( numero + " é um número divisível por 3");
                 i++;
             }
