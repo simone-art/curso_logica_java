@@ -17,11 +17,23 @@ public class IteracaoWhile {
 //            System.out.println("Um texto qualquer.");
 //        }
 
+//        int i = 0;
+//        while(i < 10){
+//            if( i == 5){
+//                System.out.println("Vai parar!");
+//                break;
+//            }
+//            System.out.println("Um texto qualquer.");
+//            i++;
+//        }
+
+        //Para não entrar no If infinito, o i++ deve estar antes do continuar
         int i = 0;
         while(i < 10){
             if( i == 5){
-                System.out.println("Vai parar!");
-                break;
+                System.out.println("Vai continuar!");
+//                i++;
+                continue;
             }
             System.out.println("Um texto qualquer.");
             i++;
