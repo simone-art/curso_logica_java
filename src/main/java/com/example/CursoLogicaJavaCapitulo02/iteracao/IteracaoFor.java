@@ -29,12 +29,22 @@ public class IteracaoFor {
 //        }
 
         //Com o continue, o código não printa a iteração 5 e continua no 6
-        for (int i = 0; i < 10; i++) {
-            if(i== 5){
-                System.out.println("Vai continuar!");
-                continue;
+//        for (int i = 0; i < 10; i++) {
+//            if(i== 5){
+//                System.out.println("Vai continuar!");
+//                continue;
+//            }
+//            System.out.println("Iteracao" + i);
+//        }
+
+        Integer [] produtos = new Integer[]{100, 225, 300};
+        for (int i = 0; i < produtos.length; i++) {
+            Integer produto = produtos[i];
+            if (produto.equals(225)){
+                System.out.println("Produto encontrado!");
+                break;
             }
-            System.out.println("Iteracao" + i);
         }
+
     }
 }
