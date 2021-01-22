@@ -32,7 +32,7 @@ public class IteracaoWhile {
         while(i < 10){
             if( i == 5){
                 System.out.println("Vai continuar!");
-//                i++;
+                i++;
                 continue;
             }
             System.out.println("Um texto qualquer.");
