@@ -11,10 +11,20 @@ public class IteracaoWhile {
 
         //O laço While se usa mais quando a condição é booleana.
         //Verdadeiro continua e falso para.
+//        int i = 0;
+//        while(i < 10){
+//           i++;
+//            System.out.println("Um texto qualquer.");
+//        }
+
         int i = 0;
         while(i < 10){
-           i++;
+            if( i == 5){
+                System.out.println("Vai parar!");
+                break;
+            }
             System.out.println("Um texto qualquer.");
+            i++;
         }
     }
 }
