@@ -26,12 +26,12 @@ public class CadastrarTarefasDoDia {
         System.out.print("Digite a tarefa do día:");
         String tarefasDoDia05 = scanner.nextLine();
 
-        for (int i = 0; i < tarefasDoDia.length; i++) {
-            System.out.println("A tarefa do día é: " + tarefasDoDia01 +
-                    "," + tarefasDoDia02 + ","
-                    + tarefasDoDia03  + ","
-                    + tarefasDoDia04  + ", e" + tarefasDoDia05);
-        }
+
+        System.out.println("A tarefa do día é: " + tarefasDoDia01 +
+                    ", " + tarefasDoDia02 + ", "
+                    + tarefasDoDia03  + ", "
+                    + tarefasDoDia04  + ", e " + tarefasDoDia05);
+
 //
 //        tarefasDoDia[0] = "";
 //        tarefasDoDia[1] = "";
