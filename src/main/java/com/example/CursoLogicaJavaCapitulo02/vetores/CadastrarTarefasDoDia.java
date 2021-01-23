@@ -11,40 +11,19 @@ public class CadastrarTarefasDoDia {
 
     public static void main (String [] args){
 
-
-        String [] tarefasDoDia = new String[]{"tarefasDoDia01", "tarefasDoDia02", "tarefasDoDia03", "tarefasDoDia04", "tarefasDoDia05"};
-
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Digite a tarefa do día:");
-        String tarefasDoDia01 = scanner.nextLine();
-        System.out.print("Digite a tarefa do día:");
-        String tarefasDoDia02 = scanner.nextLine();
-        System.out.print("Digite a tarefa do día:");
-        String tarefasDoDia03 = scanner.nextLine();
-        System.out.print("Digite a tarefa do día:");
-        String tarefasDoDia04 = scanner.nextLine();
-        System.out.print("Digite a tarefa do día:");
-        String tarefasDoDia05 = scanner.nextLine();
+        String [] tarefasDoDia = new String[5];
 
+        for(int i = 0; i < tarefasDoDia.length; i++){
+            System.out.print("Digite a Tarefa" + i + " : ");
+            tarefasDoDia[i] = scanner.nextLine();
+        }
 
-        System.out.println("A tarefa do día é: " + tarefasDoDia01 +
-                    ", " + tarefasDoDia02 + ", "
-                    + tarefasDoDia03  + ", "
-                    + tarefasDoDia04  + ", e " + tarefasDoDia05);
+        System.out.println("As tarefas de hoje são: " );
+        for(int i = 0; i < tarefasDoDia.length; i++){
+            System.out.print( i + ": "  + tarefasDoDia[i] + ", ");
+        }
 
-//
-//        tarefasDoDia[0] = "";
-//        tarefasDoDia[1] = "";
-//        tarefasDoDia[2] = "";
-//        tarefasDoDia[3] = "";
-//        tarefasDoDia[4] = "";
-//
-//        Scanner scanner = new Scanner(System.in);
-////        for (int i = 0; i < 5; i++) {
-////            System.out.println(tarefasDoDia[i]);
-////        }
-//
-        //System.out.println("A tarefa do día é: " + tarefasDoDia01 + "," + tarefasDoDia02 + "," + tarefasDoDia03  + "," + tarefasDoDia04  + ", e" + tarefasDoDia05);
 
 
 
