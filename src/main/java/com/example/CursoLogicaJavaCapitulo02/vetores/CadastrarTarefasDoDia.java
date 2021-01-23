@@ -12,7 +12,7 @@ public class CadastrarTarefasDoDia {
     public static void main (String [] args){
 
 
-        //String [] tarefasDoDia = new String[5];
+        String [] tarefasDoDia = new String[]{"tarefasDoDia01", "tarefasDoDia02", "tarefasDoDia03", "tarefasDoDia04", "tarefasDoDia05"};
 
         Scanner scanner = new Scanner(System.in);
         System.out.print("Digite a tarefa do día:");
@@ -26,9 +26,12 @@ public class CadastrarTarefasDoDia {
         System.out.print("Digite a tarefa do día:");
         String tarefasDoDia05 = scanner.nextLine();
 
-//        for (int i = 0; i < tarefasDoDia.length; i++) {
-//          System.out.println(tarefasDoDia[i]);
-//        }
+        for (int i = 0; i < tarefasDoDia.length; i++) {
+            System.out.println("A tarefa do día é: " + tarefasDoDia01 +
+                    "," + tarefasDoDia02 + ","
+                    + tarefasDoDia03  + ","
+                    + tarefasDoDia04  + ", e" + tarefasDoDia05);
+        }
 //
 //        tarefasDoDia[0] = "";
 //        tarefasDoDia[1] = "";
@@ -41,7 +44,8 @@ public class CadastrarTarefasDoDia {
 ////            System.out.println(tarefasDoDia[i]);
 ////        }
 //
-        System.out.println("A tarefa do día é: " + tarefasDoDia01 + "," + tarefasDoDia02 + "," + tarefasDoDia03  + "," + tarefasDoDia04  + ", e" + tarefasDoDia05);
+        //System.out.println("A tarefa do día é: " + tarefasDoDia01 + "," + tarefasDoDia02 + "," + tarefasDoDia03  + "," + tarefasDoDia04  + ", e" + tarefasDoDia05);
+
 
 
     }
