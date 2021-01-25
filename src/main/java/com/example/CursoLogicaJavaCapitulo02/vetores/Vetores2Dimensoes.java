@@ -19,7 +19,7 @@ public class Vetores2Dimensoes {
 
 
         // Para que o vector funcione, devemos accesá-lo da seguinte usando a posicão:
-//        System.out.println("Faturamento do día 1 de janeiro: " + faturamentoAnual [0][0]);
+         System.out.println("Faturamento do día 1 de janeiro: " + faturamentoAnual [0][0]);
 //        System.out.println("Faturamento do día 3 de fevereiro: " + faturamentoAnual [1][2]);
 
         //Printa o mês contido na lista fatruamentoAnual
