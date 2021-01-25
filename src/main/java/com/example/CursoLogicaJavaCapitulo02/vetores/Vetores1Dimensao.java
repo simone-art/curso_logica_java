@@ -3,6 +3,7 @@ package com.example.CursoLogicaJavaCapitulo02.vetores;
 import java.util.Scanner;
 
 public class Vetores1Dimensao {
+
     public static void main(String[] args) {
         // Isto é um vetor de uma dimensão
 //        String [] cardapio = new String[]{"Calabresa", "Atum", "Queijo", "Presunto"};
