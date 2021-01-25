@@ -24,8 +24,8 @@ public class CadastrarTarefasDoDia {
             System.out.print( i + ": "  + tarefasDoDia[i] + ", ");
         }
 
-
-
+        scanner.close();
+        
 
     }
 }
