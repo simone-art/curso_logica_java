@@ -16,7 +16,7 @@ public class RetornandoValores {
         // 50 -------- 100%
         //  --------   20%
 
-    Double [ ] premissaInicial = new Double[]{50.0, 100.0};
+    Double [ ] premissaInicial = new Double[]{725.5, 100.0};
     Double proporcao = 20.0;
 
     Double resultadoFinal = regraDeTres(premissaInicial, proporcao);
