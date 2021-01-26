@@ -24,7 +24,7 @@ public class CalculadoraRestaSoma {
         System.out.print("Digite o segundo número: ");
         Double num2 = scanner.nextDouble();
 
-        String[] operacao = new String[]{"Soma", "Resta"};
+        String[] operacao = new String[]{"Soma", "Subtração", "Multiplicação", "Divisão"};
         System.out.println("Escolhe a operação que você quer fazer: ");
 
         for (int i = 0; i < operacao.length; i++) {
@@ -36,6 +36,10 @@ public class CalculadoraRestaSoma {
             metodoAdicao(num1, num2);
         }else if(escolherOperacao == 1){
             metodoSubstracao(num1, num2);
+        }else if(escolherOperacao == 2){
+            metodoMultiplicacao(num1, num2);
+        }else if(escolherOperacao == 3){
+            metodoDivisao(num1, num2);
         }
     }
 
@@ -51,5 +55,17 @@ public class CalculadoraRestaSoma {
             System.out.println("O resultado da subtração é:" + subtracao);
             return subtracao;
         }
+
+        static Double metodoMultiplicacao (Double num1, Double num2) {
+            Double multiplicacao = num1 * num2;
+            System.out.println("O resultado da multiplicação é:" + multiplicacao);
+            return multiplicacao;
+        }
+        static Double metodoDivisao (Double num1, Double num2){
+                Double divisao = num1 / num2;
+                System.out.println("O resultado da divisão é:" + divisao);
+                return divisao;
+        }
 }
+
 
