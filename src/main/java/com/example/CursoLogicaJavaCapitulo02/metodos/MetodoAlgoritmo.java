@@ -70,5 +70,5 @@ public class MetodoAlgoritmo {
             System.err.println("Posição inválida!");
             System.exit(1);
         }
-    }
+}
 
