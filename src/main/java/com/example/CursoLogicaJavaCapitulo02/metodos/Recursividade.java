@@ -7,7 +7,7 @@ public class Recursividade {
 
 //        imprimirNumero(0);
         String [] alunos = new String[]{"Simone", "Diego", "Marcos"};
-        iterarNomes(alunos);
+        iterarNomes(alunos, 0);
     }
 
 //    static void imprimirNumero(Integer numero){
@@ -18,9 +18,15 @@ public class Recursividade {
 //        }
 //    }
 
-    static void iterarNomes(String []alunos){
-        for(int i = 0; i < alunos.length; i++){
-            System.out.println("Alunos: " + alunos[i]);
+//    static void iterarNomes(String []alunos){
+//        for(int i = 0; i < alunos.length; i++){
+//            System.out.println("Alunos: " + alunos[i]);
+//        }
+
+    static void iterarNomes(String [] alunos, Integer i){
+        System.out.println("Alunos: " + alunos[i]);
+        if(++i < alunos.length){
+            iterarNomes(alunos, i);
         }
     }
 }
