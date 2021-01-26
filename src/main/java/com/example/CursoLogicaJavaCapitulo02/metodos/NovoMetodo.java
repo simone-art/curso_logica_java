@@ -2,20 +2,7 @@ package com.example.CursoLogicaJavaCapitulo02.metodos;
 
 import java.util.Scanner;
 
-public class RecebendoParametros {
-//    public static void main (String [] args){
-//        imprimirTraco();
-//        String nome= "Simone";
-//        imprimir(nome);
-//    }
-//
-//    static void imprimirTraco(){
-//        System.out.println("=======================");
-//    }
-//    //O método tem que estar por fora do main
-//    static void imprimir(String texto){
-//        System.out.println(texto);
-//    }
+public class NovoMetodo {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -24,7 +11,8 @@ public class RecebendoParametros {
 
         String[] cursos = new String[] {"Java EE", "Spring", "Java OO Avançado"};
 
-        System.out.println("Escolha dentre os cursos abaixo: ");
+        imprimirTexto("Escolha dentre os cursos abaixo: ");
+//        System.out.println("Escolha dentre os cursos abaixo: ");
 
         iterarEexibirPosicoesDoVetorString(cursos);
 
@@ -53,8 +41,8 @@ public class RecebendoParametros {
 //            System.out.println("[" + i + "] " + formasPagamento[i]);
 //        }
 
-
-        System.out.print("Sua forma de pagamento escolhida é: ");
+        imprimirTexto("Sua forma de pagamento escolhida é: ");
+//        System.out.print("Sua forma de pagamento escolhida é: ");
         Integer posicaoFormaPagamentoEscolhida = scanner.nextInt();
 
         posicaoValida = posicaoFormaPagamentoEscolhida >= 0
@@ -76,7 +64,7 @@ public class RecebendoParametros {
     // Estes são vários métodos. Como o código se repetia
     // é melhor fazer o método e depois chamá-lo onde precisa
 
-     //Neste método tem que ser passado um parámetro porque
+    //Neste método tem que ser passado um parámetro porque
     // o vetor Cursos, ele está no método main, e por isso não pode ser usado aqui
     //Depois no main, você incluirá -ao invocar o método- o parámetro curso
 
@@ -96,4 +84,7 @@ public class RecebendoParametros {
         System.exit(1);
     }
 
+    static void imprimirTexto(String texto){
+        System.out.println(texto);
+    }
 }
