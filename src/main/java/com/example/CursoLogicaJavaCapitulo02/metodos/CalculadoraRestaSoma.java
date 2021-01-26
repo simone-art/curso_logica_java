@@ -14,7 +14,7 @@ public class CalculadoraRestaSoma {
 
     //Fique a vontade para implementar multiplicação e divisão também.
 
-    public static void main (String [] args){
+    public static void main (String [] args) {
 
         Scanner scanner = new Scanner(System.in);
 
@@ -24,32 +24,32 @@ public class CalculadoraRestaSoma {
         System.out.print("Digite o segundo número: ");
         Double num2 = scanner.nextDouble();
 
-        String [] operacao = new String[]{"Soma", "Resta"};
+        String[] operacao = new String[]{"Soma", "Resta"};
         System.out.println("Escolhe a operação que você quer fazer: ");
 
-        for(int i = 0; i < operacao.length; i++) {
+        for (int i = 0; i < operacao.length; i++) {
             System.out.println("[" + i + "] " + operacao[i]);
         }
 
         Integer escolherOperacao = scanner.nextInt();
-
-        metodoAdicao(num1, num2);
-
-        metodoSubstracao(num1, num2);
-
-       }
-
-       static Double metodoAdicao(Double num1, Double num2){
-        Double soma = num1 + num2;
-        System.out.println("O resultado da soma é:" + soma);
-        return soma;
-       }
-
-      static Double metodoSubstracao(Double num1, Double num2){
-        Double subtracao = num1 - num2;
-        System.out.println("O resultado da subtração é:" + subtracao);
-        return subtracao;
+        if (escolherOperacao == 0) {
+            metodoAdicao(num1, num2);
+        }else if(escolherOperacao == 1){
+            metodoSubstracao(num1, num2);
+        }
     }
 
+
+        static Double metodoAdicao (Double num1, Double num2){
+            Double soma = num1 + num2;
+            System.out.println("O resultado da soma é:" + soma);
+            return soma;
+        }
+
+        static Double metodoSubstracao (Double num1, Double num2){
+            Double subtracao = num1 - num2;
+            System.out.println("O resultado da subtração é:" + subtracao);
+            return subtracao;
+        }
 }
 
