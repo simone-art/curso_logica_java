@@ -2,7 +2,7 @@ package com.example.CursoLogicaJavaCapitulo02.metodos;
 
 import java.util.Scanner;
 
-public class PrimeiroMetodo {
+public class MetodoAlgoritmo {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -22,9 +22,9 @@ public class PrimeiroMetodo {
 
         Boolean posicaoValida = posicaoCursoEscolhido >= 0 && posicaoCursoEscolhido < cursos.length;
 
+
         if (!posicaoValida) {
-            System.err.println("Posição inválida!");
-            System.exit(1);
+            mensagemPosicaoValida();
         }
 
         imprimirTraco();
@@ -43,9 +43,9 @@ public class PrimeiroMetodo {
         posicaoValida = posicaoFormaPagamentoEscolhida >= 0
                 && posicaoFormaPagamentoEscolhida < formasPagamento.length;
 
+
         if (!posicaoValida) {
-            System.err.println("Posição inválida!");
-            System.exit(1);
+            mensagemPosicaoValida();
         }
 
         String cursoEscolhido = cursos[posicaoCursoEscolhido];
@@ -66,5 +66,9 @@ public class PrimeiroMetodo {
         System.out.println("----------------------------------------------");
     }
 
-}
+    static void mensagemPosicaoValida(){
+            System.err.println("Posição inválida!");
+            System.exit(1);
+        }
+    }
 
