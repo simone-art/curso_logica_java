@@ -33,14 +33,23 @@ public class CalculadoraRestaSoma {
 
         Integer escolherOperacao = scanner.nextInt();
 
-            if (escolherOperacao == 0){
-             Double soma = num1 + num2;
-             System.out.println("O resultado da soma é:" + soma);
-            }else if (escolherOperacao == 1){
-                Double resta = num1 - num2;
-                System.out.println("O resultado da resta é:" + resta);
-            }
+        metodoAdicao(num1, num2);
+
+        metodoSubstracao(num1, num2);
 
        }
+
+       static Double metodoAdicao(Double num1, Double num2){
+        Double soma = num1 + num2;
+        System.out.println("O resultado da soma é:" + soma);
+        return soma;
+       }
+
+      static Double metodoSubstracao(Double num1, Double num2){
+        Double subtracao = num1 - num2;
+        System.out.println("O resultado da subtração é:" + subtracao);
+        return subtracao;
+    }
+
 }
 
