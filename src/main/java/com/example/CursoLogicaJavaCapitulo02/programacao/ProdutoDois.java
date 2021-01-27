@@ -4,6 +4,7 @@ public class ProdutoDois {
 
     String nome;
     Double precoUnitario;
+    Integer quantidadeProdutoComprado;
     Integer quantidadeEstoque;
 
 }
