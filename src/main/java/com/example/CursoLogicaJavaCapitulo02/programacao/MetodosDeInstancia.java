@@ -10,13 +10,13 @@ public class MetodosDeInstancia {
         cliente.telefone = "11 5555 2233";
         cliente.email = "simsantos@algamorks.com.br";
 
-        System.out.println("Nome Completo: " + obterNomeCompletoCliente(cliente));
+        System.out.println("Nome Completo: " + cliente.obterNomeCompletoCliente());
 
     }
           //Criando Métodos DE Instância
-       static String obterNomeCompletoCliente(Cliente cliente){
-           String nomeCompleto = cliente.primeiroNome + " " + cliente.ultimoNome;
-           return nomeCompleto;
-        }
+//       static String obterNomeCompletoCliente(Cliente cliente){
+//           String nomeCompleto = cliente.primeiroNome + " " + cliente.ultimoNome;
+//           return nomeCompleto;
+//        }
     }
 
