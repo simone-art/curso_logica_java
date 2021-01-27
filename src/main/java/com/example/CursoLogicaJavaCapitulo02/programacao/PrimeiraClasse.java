@@ -13,7 +13,7 @@ public class PrimeiraClasse {
     }
 
     static void ExibirQuantidadeEmEstoque(Produto produto){
-        System.out.println("Quantidade em estoque é: " + produto.quantidade);
+        System.out.println("Quantidade em estoque de " +produto.nome + " é: "+ produto.quantidade);
 
     }
 }
