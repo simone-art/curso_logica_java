@@ -3,48 +3,55 @@ package com.example.CursoLogicaJavaCapitulo02.algoritmoavanzado;
 public class AlgoritmoAvancado {
 
   public static void main(String[] args) {
-    ListaAlunos lista = new ListaAlunos();
+    ListaAlunos listaAlunos = new ListaAlunos();
 
     Aluno aluno = new Aluno();
     aluno.nome = "Pedro";
-    lista.adicionar(aluno);
+    listaAlunos.adicionar(aluno);
 
     //aluno = new Aluno();
     Aluno aluno1 = new Aluno();
     aluno1.nome = "Alexandre";
-    lista.adicionar(aluno1);
+    listaAlunos.adicionar(aluno1);
 
 
     //aluno = new Aluno();
     Aluno aluno2 = new Aluno();
     aluno2.nome = "Solange";
-    lista.adicionar(aluno2);
+    listaAlunos.adicionar(aluno2);
 
     //aluno = new Aluno();
     Aluno aluno3 = new Aluno();
     aluno3.nome = "Jhon";
-    lista.adicionar(aluno3);
+    listaAlunos.adicionar(aluno3);
 
     //aluno = new Aluno();
     Aluno aluno4 = new Aluno();
     aluno4.nome = "Thiago";
-    lista.adicionar(aluno4);
+    listaAlunos.adicionar(aluno4);
 
-    //Agora é neccesário iterar na lista
+    iterar(listaAlunos);
 
-    for (int i = 0; i < lista.tamanho(); i++) {
-      Aluno a = lista.obter(i);
-      System.out.println("Aluno: " + a.nome);
-    }
+    listaAlunos.ordenar();
 
-    System.out.println("===========================");
+    iterar(listaAlunos);
 
-    lista.remover(aluno2);
+    listaAlunos.remover(aluno3);
 
-    for (int i = 0; i < lista.tamanho(); i++) {
-      Aluno a = lista.obter(i);
-      System.out.println("Aluno: " + a.nome);
-    }
+    iterar(listaAlunos);
   }
 
+  static void iterar(ListaAlunos listaAlunos) {
+    for (int i = 0; i < listaAlunos.tamanho(); i++) {
+      Aluno a = listaAlunos.obter(i);
+      if (a != null) {
+        System.out.println("Aluno: " + a.nome);
+      } else {
+        System.out.println("Aluno sem nome");
+      }
+    }
+
+    System.out.println("--------------------------");
+  }
 }
+
