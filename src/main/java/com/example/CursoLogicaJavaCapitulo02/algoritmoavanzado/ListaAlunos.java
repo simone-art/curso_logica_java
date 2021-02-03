@@ -2,26 +2,32 @@ package com.example.CursoLogicaJavaCapitulo02.algoritmoavanzado;
 
 public class ListaAlunos {
 
-    //int é um primitivo
-    static final int QUANTIDADE_LISTA = 2;
+    static final int QUANTIDADE_LISTA = 5;
 
-    Aluno [] lista = new Aluno[QUANTIDADE_LISTA];
+    Aluno[] lista = new Aluno[QUANTIDADE_LISTA];
 
-    //Controla o tamanho da lista
     int tamanhoLista = 0;
 
-    Aluno obter(int indice){
+    Aluno obter(int indice) {
         return lista[indice];
     }
 
-    int tamanho(){
+    int tamanho() {
         return tamanhoLista;
     }
 
-    //Método para adicionar aluno novo
-    void adicionar (Aluno aluno){
+    void adicionar(Aluno aluno) {
+        if (tamanhoLista == lista.length) {
+            Aluno[] novaLista = new Aluno[QUANTIDADE_LISTA + lista.length];
+
+            for (int i = 0; i < lista.length; i++) {
+                novaLista[i] = lista[i];
+            }
+
+            lista = novaLista;
+        }
+
         lista[tamanhoLista] = aluno;
         tamanhoLista++;
     }
-
 }
