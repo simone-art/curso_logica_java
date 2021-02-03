@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="escrita" type="Application" factoryName="Application">
-    <option name="MAIN_CLASS_NAME" value="com.example.CursoLogicaJavaCapitulo02.escritaarquivos.LeituraListaTarefas" />
+  <configuration default="false" name="biblioteca" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="com.example.CursoLogicaJavaCapitulo02.biblioteca.BibliotecaPropiaDois" />
     <module name="CursoLogicaJavaCapitulo02" />
     <method v="2">
       <option name="Make" enabled="true" />

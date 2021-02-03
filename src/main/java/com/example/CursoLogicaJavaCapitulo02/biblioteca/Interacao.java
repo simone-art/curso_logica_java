@@ -8,9 +8,9 @@ public class Interacao {
     Scanner scanner = new Scanner(System.in);
 
     //Método para lêr número
-    public Integer lerNumero(String texto){
-        System.out.print(texto);
-        return scanner.nextInt();
+        public Integer lerNumero(String texto){
+            System.out.print(texto);
+            return scanner.nextInt();
     }
 
     //Método para lêr Decimal
@@ -25,22 +25,21 @@ public class Interacao {
         return scanner.nextLine();
     }
 
-    //Método para fechar o programa
-    public void fechar(){
-        scanner.close();
-    }
-
     //Método para imprimir texto
-    public void imprimir(String texto){
+    public void imprimir (String texto){
         System.out.println(texto);
-
     }
 
     //Método para imprimir erro
     public void erro(String texto){
         System.err.println(texto);
-
     }
+
+    //Método para fechar o programa
+    public  void fechar(){
+        scanner.close();
+    }
+
 
 
 }
