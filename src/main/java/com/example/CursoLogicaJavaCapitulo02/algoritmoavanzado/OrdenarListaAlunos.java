@@ -1,40 +1,25 @@
 package com.example.CursoLogicaJavaCapitulo02.algoritmoavanzado;
 
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.Collections;
+import java.util.List;
 
 public class OrdenarListaAlunos {
 
-    //Crie um arquivo de texto, no seu computador, com os seguintes nomes:
-    //
-    //Thiago
-    //Maria
-    //Alexandre
-    //Normandes
-    //João
-    //Feito isso, crie um programa que faça a leitura do arquivo,
-    // coloque os nomes em ordem alfabética e, por fim,
-    // salve os nomes já ordenados em um arquivos diferente.
+    public static void main (String [] args){
+        List listaNomes = new ArrayList();
 
-    //Código para criar uma lista de alunos e salvá-la em um arquivo txt
+        listaNomes.add("Thiago");
+        listaNomes.add("Maria");
+        listaNomes.add("Alexandre");
+        listaNomes.add("Normandes");
+        listaNomes.add("Joao");
 
-    public static void main(String[] args) throws IOException {
-        Scanner scanner = new Scanner(System.in);
+        System.out.println("Lista sem ordem alfabética: " + listaNomes);
 
-        ArrayList<String> linhas = new ArrayList<String>();
+        Collections.sort(listaNomes);
 
-        for (int i = 0; i < 5; i++) {
-            System.out.print("Nome do Aluno:");
-            String nomes = scanner.nextLine();
-            linhas.add(nomes);
-        }
+        System.out.println("Lista em ordem alfabética: " + listaNomes);
 
-        Path arquivo = Paths.get("C:/Users/s.santos.pimenta/Documents/txt/lista-nomes-alunos.txt");
-        Files.write(arquivo, linhas);
-        System.out.println("Fim");
     }
 }
