@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Collections;
 import java.util.List;
 
 public class LeituraListaAlunos {
@@ -19,6 +20,7 @@ public class LeituraListaAlunos {
             System.out.println("Nome do Aluno " + i + ": " + nomes);
 
         }
+
     }
 
 }
